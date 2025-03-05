@@ -8,7 +8,7 @@
 ## Overview
 This project aims to optimize poorly structured user queries by analyzing and rewriting them using advanced techniques inspired by LangChain and visual reasoning research (e.g., “Rethinking Step-by-step Visual Reasoning in LLMs”). The optimized queries are then indexed in ElasticSearch for improved search performance. A user interface (to be developed in React.js) will allow users to enter queries and receive optimized versions.
 
-![Başlıksız Diyagram drawio2](https://github.com/user-attachments/assets/0ed2ad0a-6d46-41fb-a56d-a01a2ab1b3aa)
+![Başlıksız Diyagram](https://github.com/user-attachments/assets/faa079a4-6f68-4aa5-b681-0fe96fc96299)
 
 ## How to Start
 1. **Collect Dataset:**  
