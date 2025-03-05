@@ -14,6 +14,7 @@ query_analysis_project/
 ├── elasticsearch_integration.py
 └── optimizer/
     ├── __init__.py
+    ├── query_analyzer.py
     ├── query_optimizer.py
     └── langchain_utils.py
 ```
