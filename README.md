@@ -1,5 +1,8 @@
 # Project-16
 
+## Team 23: Ducktor
+## Members: Fujia Yu, Aygün Varol
+
 # Query Analysis of Large Language Models Using LangChain for Multimedia Application
 
 ## Overview
