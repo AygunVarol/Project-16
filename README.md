@@ -72,3 +72,16 @@ query_analysis_project/
     └── langchain_utils.py
 ```
 
+# Workflow
+
+```
+    A[User Enters Query (UI)] --> B[POST Request to /optimize]
+    B --> C[Flask API in app.py]
+    C --> D[Extract Query]
+    D --> E[Analyze Query Inefficiencies (query_analyzer.py)]
+    E --> F[Optimize Query using LangChain (langchain_utils.py)]
+    F --> G[Index Original & Optimized Queries (ElasticSearch)]
+    G --> H[Return Optimized Query as JSON]
+    H --> I[Display Optimized Query (UI)]
+```
+
