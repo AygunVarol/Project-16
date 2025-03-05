@@ -8,6 +8,8 @@
 ## Overview
 This project aims to optimize poorly structured user queries by analyzing and rewriting them using advanced techniques inspired by LangChain and visual reasoning research (e.g., “Rethinking Step-by-step Visual Reasoning in LLMs”). The optimized queries are then indexed in ElasticSearch for improved search performance. A user interface (to be developed in React.js) will allow users to enter queries and receive optimized versions.
 
+![Başlıksız Diyagram](https://github.com/user-attachments/assets/21390aa1-5937-4450-bbeb-6d26bc835ce8)
+
 ## How to Start
 1. **Collect Dataset:**  
    Collect a dataset of user queries (e.g., Google Search Query Dataset). Use the provided `dataset_loader.py` script to ingest your data.
