@@ -17,7 +17,7 @@ class QueryResponse(BaseModel):
 def optimize_query(request: QueryRequest):
     query = request.query
     try:
-        # Optimize the query using LangChain
+        # Analyze and optimize the query
         optimized_query = optimizer.optimize_query(query)
         # Index both the original and optimized query into ElasticSearch
         es_client.index_query(query, optimized_query)
