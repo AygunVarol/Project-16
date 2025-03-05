@@ -1,5 +1,40 @@
 # Project-16
-Query analysis of Large Language  Models Using LangChain for  Multimedia Application
+
+# Query Analysis of Large Language Models Using LangChain for Multimedia Application
+
+## Overview
+This project aims to optimize poorly structured user queries by analyzing and rewriting them using advanced techniques inspired by LangChain and visual reasoning research (e.g., “Rethinking Step-by-step Visual Reasoning in LLMs”). The optimized queries are then indexed in ElasticSearch for improved search performance. A user interface (to be developed in React.js) will allow users to enter queries and receive optimized versions.
+
+## How to Start
+1. **Collect Dataset:**  
+   Collect a dataset of user queries (e.g., Google Search Query Dataset). Use the provided `dataset_loader.py` script to ingest your data.
+
+2. **Analyze Query Inefficiencies:**  
+   Identify common issues in user queries—such as ambiguity, brevity, or missing keywords. The module `optimizer/query_analyzer.py` provides basic analysis logic.
+
+3. **Optimize Query Structures:**  
+   Use LangChain to reformat and optimize the queries for better AI comprehension. The module `optimizer/langchain_utils.py` contains functions to interface with your LLM (or a placeholder transformation) for query optimization.
+
+4. **Query Reformulation System:**  
+   Develop an AI-powered system that leverages the analysis and optimization modules to improve search intent recognition.
+
+5. **ElasticSearch Integration:**  
+   Integrate with ElasticSearch (via `elasticsearch_integration.py`) to index and test the performance of the optimized queries.
+
+6. **User Interface (React.js):**  
+   Build a user interface where users can input queries and receive optimized versions. The FastAPI backend is designed to be easily integrated with a React.js frontend.
+
+## Application Components
+- **Backend API:** Python-based API built with FastAPI.
+- **Query Analysis & Optimization:** Combines inefficiency analysis (in `optimizer/query_analyzer.py`) and query reformulation using LangChain utilities.
+- **Search Indexing:** ElasticSearch integration for storing and testing query performance.
+- **Frontend:** Planned React.js interface (not included in this repository).
+
+## Setup and Running
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+    ```
 
 # Structure
 
