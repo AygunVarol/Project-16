@@ -8,6 +8,7 @@
 ## Overview
 This project aims to optimize poorly structured user queries by analyzing and rewriting them using advanced techniques inspired by LangChain and visual reasoning research (e.g., “Rethinking Step-by-step Visual Reasoning in LLMs”). The optimized queries are then indexed in ElasticSearch for improved search performance. A user interface (to be developed in React.js) will allow users to enter queries and receive optimized versions.
 
+# Workflow
 ![Başlıksız Diyagram](https://github.com/user-attachments/assets/faa079a4-6f68-4aa5-b681-0fe96fc96299)
 
 ## How to Start
@@ -72,18 +73,5 @@ query_analysis_project/
     ├── query_analyzer.py
     ├── query_optimizer.py
     └── langchain_utils.py
-```
-
-# Workflow
-
-```
-    A[User Enters Query (UI)] --> B[POST Request to /optimize]
-    B --> C[Flask API in app.py]
-    C --> D[Extract Query]
-    D --> E[Analyze Query Inefficiencies (query_analyzer.py)]
-    E --> F[Optimize Query using LangChain (langchain_utils.py)]
-    F --> G[Index Original & Optimized Queries (ElasticSearch)]
-    G --> H[Return Optimized Query as JSON]
-    H --> I[Display Optimized Query (UI)]
 ```
 
