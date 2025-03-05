@@ -35,6 +35,24 @@ This project aims to optimize poorly structured user queries by analyzing and re
    ```bash
    pip install -r requirements.txt
     ```
+2. Configure `config.py` with your settings (ElasticSearch host/port, API keys, etc.).
+3. Run the API server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+4. Use the `/optimize` endpoint to submit queries and receive optimized versions.
+
+## Requirements
+
+
+```plaintext
+fastapi==0.70.0
+uvicorn==0.15.0
+langchain==0.0.148
+elasticsearch==7.17.0
+pandas
+openai
+```
 
 # Structure
 
