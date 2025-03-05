@@ -25,10 +25,10 @@ This project aims to optimize poorly structured user queries by analyzing and re
    Integrate with ElasticSearch (via `elasticsearch_integration.py`) to index and test the performance of the optimized queries.
 
 6. **User Interface (React.js):**  
-   Build a user interface where users can input queries and receive optimized versions. The FastAPI backend is designed to be easily integrated with a React.js frontend.
+   Build a user interface where users can input queries and receive optimized versions. The Flask backend is designed to be easily integrated with a React.js frontend.
 
 ## Application Components
-- **Backend API:** Python-based API built with FastAPI.
+- **Backend API:** Python-based API built with Flask.
 - **Query Analysis & Optimization:** Combines inefficiency analysis (in `optimizer/query_analyzer.py`) and query reformulation using LangChain utilities.
 - **Search Indexing:** ElasticSearch integration for storing and testing query performance.
 - **Frontend:** Planned React.js interface (not included in this repository).
@@ -39,18 +39,16 @@ This project aims to optimize poorly structured user queries by analyzing and re
    pip install -r requirements.txt
     ```
 2. Configure `config.py` with your settings (ElasticSearch host/port, API keys, etc.).
-3. Run the API server:
+3. Run the Flask API server:
    ```bash
-   uvicorn main:app --reload
+   python app.py
    ```
 4. Use the `/optimize` endpoint to submit queries and receive optimized versions.
 
 ## Requirements
 
-
 ```plaintext
-fastapi==0.70.0
-uvicorn==0.15.0
+Flask==2.0.2
 langchain==0.0.148
 elasticsearch==7.17.0
 pandas
@@ -64,8 +62,7 @@ query_analysis_project/
 ├── README.md
 ├── requirements.txt
 ├── config.py
-├── main.py
-├── api.py
+├── app.py
 ├── dataset_loader.py
 ├── elasticsearch_integration.py
 └── optimizer/
