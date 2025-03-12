@@ -1,6 +1,9 @@
 # Project-16
 
 ## Team 23: Ducktor
+
+![DALL·E 2025-03-12 09 22 36 - A cartoon-style duck dressed as a PhD graduate  The duck wears a black academic gown, a mortarboard cap with a tassel, and round glasses  It holds a d - Kopya](https://github.com/user-attachments/assets/1ff59c90-6037-41e2-a521-0f63086f2527)
+
 ## Members: Fujia Yu, Aygün Varol
 
 # Query Analysis of Large Language Models Using LangChain for Multimedia Application
