@@ -55,6 +55,13 @@ This project aims to optimize poorly structured user queries by analyzing and re
    ```
 4. Use the `/optimize` endpoint to submit queries and receive optimized versions.
 
+5. Create a React UI
+   ```
+   npx create-react-app query-optimizer-ui
+   cd query-optimizer-ui
+   npm start
+   ```
+
 ## Requirements
 
 ```plaintext
