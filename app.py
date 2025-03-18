@@ -1,11 +1,17 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 from optimizer.query_optimizer import QueryOptimizer
 from elasticsearch_integration import ElasticsearchClient
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
+CORS(app)  # Enable CORS for all routes
 
 optimizer = QueryOptimizer()
 es_client = ElasticsearchClient()
+
+@app.route('/')
+def home():
+    return "Welcome to the Query Optimizer API. Use the /optimize endpoint to POST your query."
 
 @app.route('/optimize', methods=['POST'])
 def optimize_query():
@@ -15,9 +21,7 @@ def optimize_query():
 
     query = data['query']
     try:
-        # Analyze and optimize the query
         optimized_query = optimizer.optimize_query(query)
-        # Index both the original and optimized query into ElasticSearch
         es_client.index_query(query, optimized_query)
         return jsonify({'optimized_query': optimized_query})
     except Exception as e:
