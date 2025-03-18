@@ -15,6 +15,9 @@ This project aims to optimize poorly structured user queries by analyzing and re
 # Workflow
 ![Başlıksız Diyagram](https://github.com/user-attachments/assets/faa079a4-6f68-4aa5-b681-0fe96fc96299)
 
+# User Interface
+![resim](https://github.com/user-attachments/assets/41fb8089-a6e1-4380-9a5d-97466d5d7ff8)
+
 ## How to Start
 1. **Collect Dataset:**  
    Collect a dataset of user queries (e.g., Google Search Query Dataset). Use the provided `dataset_loader.py` script to ingest your data.
