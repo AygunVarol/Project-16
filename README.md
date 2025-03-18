@@ -16,7 +16,7 @@ This project aims to optimize poorly structured user queries by analyzing and re
 ![Başlıksız Diyagram](https://github.com/user-attachments/assets/faa079a4-6f68-4aa5-b681-0fe96fc96299)
 
 # User Interface
-![resim](https://github.com/user-attachments/assets/41fb8089-a6e1-4380-9a5d-97466d5d7ff8)
+![resim](https://github.com/user-attachments/assets/0d120919-60fd-482a-a481-b05cef2765e5)
 
 ## How to Start
 1. **Collect Dataset:**  
