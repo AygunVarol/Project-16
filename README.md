@@ -92,10 +92,4 @@ query_analysis_project/
 
 # Fine-tuned Model 1 - [llama-query-expansion-finetuned](https://huggingface.co/Aygun/llama-query-expansion-finetuned) 
 
-![resim](https://github.com/user-attachments/assets/64fa60f6-2d5e-4c0c-ac12-a268a9ce72b6)
-
-# Fine-tuned Model 2 - and [llama-3.2-1B-MLQRECC-Rewriter](https://huggingface.co/Aygun/llama-3.2-1B-MLQRECC-Rewriter)
-
-![resim](https://github.com/user-attachments/assets/84117b74-494a-4b2d-baf8-10452c87f73d)
-
-
+# Fine-tuned Model 2 - [llama-3.2-1B-MLQRECC-Rewriter](https://huggingface.co/Aygun/llama-3.2-1B-MLQRECC-Rewriter)
