@@ -1,4 +1,4 @@
-# Project-16
+![resim](https://github.com/user-attachments/assets/fb3122d0-8537-493c-9f98-dc83ceda5bb5)# Project-16
 
 ## ![DALL·E 2025-03-12 09 22 36 - A cartoon-style duck dressed as a PhD graduate  The duck wears a black academic gown, a mortarboard cap with a tassel, and round glasses  It holds a d - Kopya](https://github.com/user-attachments/assets/2e35cf31-4e02-4e33-8fe4-c80e519a09a2)
 
@@ -38,7 +38,11 @@ This project aims to optimize poorly structured user queries by analyzing and re
    By combining the analysis and optimization modules, our AI-powered system improves search intent recognition by generating refined and enriched versions of user queries.
 
 6. **ElasticSearch Integration:**  
-   The optimized queries are indexed and tested for performance using ElasticSearch. Integration details can be found in `elasticsearch_integration.py`. Elastic search runs on virtual machine on `http://195.148.21.36:5601` IP Adress
+   The optimized queries are indexed and tested for performance using ElasticSearch. Integration details can be found in `elasticsearch_integration.py`. Elastic search runs on virtual machine on Public IP Adress
+   The Adress is:
+   ```
+   http://195.148.21.36:5601/
+   ```
 
 7. **User Interface (React.js):**  
    A user-friendly React.js interface allows users to input queries and select which optimization method to apply (rewriter, expander, or DeepSeek). The Flask backend is designed to seamlessly integrate with this frontend.
