@@ -20,7 +20,7 @@ This project aims to optimize poorly structured user queries by analyzing and re
 
 ## How to Start
 1. **Collect Dataset:**  
-   Collect a dataset of user queries (e.g., Google Search Query Dataset). Use the provided `dataset_loader.py` script to ingest your data.
+   We have selected two databases namely, [ML‑QRECC dataset] and [Query Expansion Dataset](https://huggingface.co/datasets/s-emanuilov/query-expansion)
 
 2. **Analyze Query Inefficiencies:**  
    Identify common issues in user queries—such as ambiguity, brevity, or missing keywords. The module `optimizer/query_analyzer.py` provides basic analysis logic.
