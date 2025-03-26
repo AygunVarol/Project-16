@@ -1,6 +1,8 @@
 # Project-16
 
-## Team 23: Ducktor ![DALL·E 2025-03-12 09 22 36 - A cartoon-style duck dressed as a PhD graduate  The duck wears a black academic gown, a mortarboard cap with a tassel, and round glasses  It holds a d - Kopya](https://github.com/user-attachments/assets/2e35cf31-4e02-4e33-8fe4-c80e519a09a2)
+## ![DALL·E 2025-03-12 09 22 36 - A cartoon-style duck dressed as a PhD graduate  The duck wears a black academic gown, a mortarboard cap with a tassel, and round glasses  It holds a d - Kopya](https://github.com/user-attachments/assets/2e35cf31-4e02-4e33-8fe4-c80e519a09a2)
+
+## Team 23: Ducktor 
 
 ## Members: Fujia Yu, Aygün Varol
 
