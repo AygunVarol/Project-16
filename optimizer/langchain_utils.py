@@ -7,7 +7,7 @@ from config import GROQ_AI_API_KEY
 # Initialize the Groq client with your Groq AI API key.
 groq_client = Groq(api_key=GROQ_AI_API_KEY)
 
-def get_optimized_query(prompt: str, max_tokens: int = 150, temperature: float = 0.7) -> str:
+def get_optimized_query(prompt: str, max_tokens: int = 512, temperature: float = 0.7) -> str:
     """
     Optimizes a user query using Groq's deepseek‑r1‑distill‑llama‑70b model.
     
@@ -41,6 +41,7 @@ def get_optimized_query(prompt: str, max_tokens: int = 150, temperature: float =
     try:
         response = groq_client.chat.completions.create(
             model="deepseek-r1-distill-llama-70b",
+            #model="llama-3.3-70b-versatile",
             messages=chat_history,
             max_tokens=max_tokens,
             temperature=temperature
