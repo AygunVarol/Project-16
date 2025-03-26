@@ -17,26 +17,29 @@ This project aims to optimize poorly structured user queries by analyzing and re
 
 ## How to Start
 1. **Collect Dataset:**  
-   We have selected two databases namely, [ML‑QRECC dataset](https://github.com/apple/ml-qrecc) and [Query Expansion Dataset](https://huggingface.co/datasets/s-emanuilov/query-expansion)
+   We use two key datasets to train our system:
+   - ML‑QRECC Dataset: Provides query-rewriting pairs to help transform vague or ambiguous queries into clearer ones. [ML‑QRECC dataset](https://github.com/apple/ml-qrecc)
+   - Query Expansion Dataset: Offers query-expansion pairs to enrich queries with additional relevant keywords. [Query Expansion Dataset](https://huggingface.co/datasets/s-emanuilov/query-expansion)
 
 2. **Fine-tuning:**
-   We have finetuned LLama 3.2 1B Intstruct model with these datasets. These two fine-tuned models are uploaded to the hugging face repository.
-   Finetuned models are [llama-query-expansion-finetuned](https://huggingface.co/Aygun/llama-query-expansion-finetuned) and [llama-3.2-1B-MLQRECC-Rewriter](https://huggingface.co/Aygun/llama-3.2-1B-MLQRECC-Rewriter)
+   We fine-tuned the LLaMA-3.2-1B-Instruct model on these datasets to create specialized models for different optimization tasks. Both models are available on Hugging Face:
+   - Query Expansion Model: [llama-query-expansion-finetuned](https://huggingface.co/Aygun/llama-query-expansion-finetuned)
+   - Query Rewriter Model: [llama-3.2-1B-MLQRECC-Rewriter](https://huggingface.co/Aygun/llama-3.2-1B-MLQRECC-Rewriter)
 
-3. **Analyze Query Inefficiencies:**  
-   Identify common issues in user queries—such as ambiguity, brevity, or missing keywords. The module `optimizer/query_analyzer.py` provides basic analysis logic.
+3. **Analyze Query Inefficiencies:**
+   Our system first identifies common issues in user queries—such as ambiguity, brevity, or missing keywords—using the logic provided in `optimizer/query_analyzer.py`.
 
 4. **Optimize Query Structures:**  
-   Use LangChain to reformat and optimize the queries for better AI comprehension. The module `optimizer/langchain_utils.py` contains functions to interface with your LLM (or a placeholder transformation) for query optimization.
+   We leverage advanced techniques via LangChain and custom prompt engineering to reformat and optimize queries for better AI comprehension. See `optimizer/langchain_utils.py` for functions that interface with our language models (or an external service) to perform query optimization.
 
 5. **Query Reformulation System:**  
-   Develop an AI-powered system that leverages the analysis and optimization modules to improve search intent recognition.
+   By combining the analysis and optimization modules, our AI-powered system improves search intent recognition by generating refined and enriched versions of user queries.
 
 6. **ElasticSearch Integration:**  
-   Integrate with ElasticSearch (via `elasticsearch_integration.py`) to index and test the performance of the optimized queries.
+   The optimized queries are indexed and tested for performance using ElasticSearch. Integration details can be found in `elasticsearch_integration.py`.
 
 7. **User Interface (React.js):**  
-   Build a user interface where users can input queries and receive optimized versions. The Flask backend is designed to be easily integrated with a React.js frontend.
+   A user-friendly React.js interface allows users to input queries and select which optimization method to apply (rewriter, expander, or DeepSeek). The Flask backend is designed to seamlessly integrate with this frontend.
 
 ## Application Components
 - **Backend API:** Python-based API built with Flask.
