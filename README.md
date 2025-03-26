@@ -23,22 +23,23 @@ This project aims to optimize poorly structured user queries by analyzing and re
    We have selected two databases namely, [ML‑QRECC dataset](https://github.com/apple/ml-qrecc) and [Query Expansion Dataset](https://huggingface.co/datasets/s-emanuilov/query-expansion)
 
 2. **Fine-tuning:**
-   We have finetune LLama 3.2 1B Intstruct model with these datasets. These two fine-tuned models are uploaded to the hugging face repository.
+
+   We have finetuned LLama 3.2 1B Intstruct model with these datasets. These two fine-tuned models are uploaded to the hugging face repository.
    Finetuned models are [llama-query-expansion-finetuned](https://huggingface.co/Aygun/llama-query-expansion-finetuned) and [llama-3.2-1B-MLQRECC-Rewriter](https://huggingface.co/Aygun/llama-3.2-1B-MLQRECC-Rewriter)
 
-3. **Analyze Query Inefficiencies:**  
+4. **Analyze Query Inefficiencies:**  
    Identify common issues in user queries—such as ambiguity, brevity, or missing keywords. The module `optimizer/query_analyzer.py` provides basic analysis logic.
 
-4. **Optimize Query Structures:**  
+5. **Optimize Query Structures:**  
    Use LangChain to reformat and optimize the queries for better AI comprehension. The module `optimizer/langchain_utils.py` contains functions to interface with your LLM (or a placeholder transformation) for query optimization.
 
-5. **Query Reformulation System:**  
+6. **Query Reformulation System:**  
    Develop an AI-powered system that leverages the analysis and optimization modules to improve search intent recognition.
 
-6. **ElasticSearch Integration:**  
+7. **ElasticSearch Integration:**  
    Integrate with ElasticSearch (via `elasticsearch_integration.py`) to index and test the performance of the optimized queries.
 
-7. **User Interface (React.js):**  
+8. **User Interface (React.js):**  
    Build a user interface where users can input queries and receive optimized versions. The Flask backend is designed to be easily integrated with a React.js frontend.
 
 ## Application Components
