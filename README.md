@@ -49,7 +49,7 @@ This project aims to optimize poorly structured user queries by analyzing and re
 - **Search Indexing:** Integrated with ElasticSearch via `elasticsearch_integration.py` to index both the original and optimized queries, enabling performance testing and enhanced retrieval.
 - **Frontend:** A planned React.js interface that allows users to submit queries and choose between multiple optimization methods (rewriter, expander, or DeepSeek).
 
-## Elastic Search UI in Virtual Machine
+## Elastic Search UI on Virtual Machine
 ![resim](https://github.com/user-attachments/assets/02c0f956-a991-448a-a540-c74db3c15ee2)
 
 ## Setup and Running
