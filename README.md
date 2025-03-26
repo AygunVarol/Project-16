@@ -43,9 +43,9 @@ This project aims to optimize poorly structured user queries by analyzing and re
 
 ## Application Components
 - **Backend API:** Python-based API built with Flask.
-- **Query Analysis & Optimization:** Combines inefficiency analysis (in `optimizer/query_analyzer.py`) and query reformulation using LangChain utilities.
-- **Search Indexing:** ElasticSearch integration for storing and testing query performance.
-- **Frontend:** Planned React.js interface (not included in this repository).
+- **Query Analysis & Optimization:** Combines query inefficiency analysis (in `optimizer/query_analyzer.py`) with advanced query reformulation using custom prompt engineering. For external query optimization services, the system now leverages LangChain utilities to call the Groq API (see `optimizer/langchain_utils.py`) to generate optimized queries.
+- **Search Indexing:** Integrated with ElasticSearch via `elasticsearch_integration.py` to index both the original and optimized queries, enabling performance testing and enhanced retrieval.
+- **Frontend:** A planned React.js interface that allows users to submit queries and choose between multiple optimization methods (rewriter, expander, or DeepSeek).
 
 ## Setup and Running
 1. Install dependencies:
