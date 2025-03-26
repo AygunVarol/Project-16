@@ -88,6 +88,8 @@ query_analysis_project/
 ├── app.py
 ├── dataset_loader.py
 ├── elasticsearch_integration.py
+├── llama-3.2-1B-MLQRECC-Rewriter/
+├── llama-query-expansion-finetuned/
 └── optimizer/
     ├── __init__.py
     ├── query_analyzer.py
