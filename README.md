@@ -116,6 +116,11 @@ query_analysis_project/
     └── langchain_utils.py
 ```
 
+# Results
+
+![Results](https://github.com/user-attachments/assets/c16415e2-fe69-4b5b-ab8f-3195e8ef1b5d)
+
+
 # Fine-tuned Model 1 - [llama-query-expansion-finetuned](https://huggingface.co/Aygun/llama-query-expansion-finetuned) 
 
 ## Dataset 1 - [Query Expansion Dataset](https://huggingface.co/datasets/s-emanuilov/query-expansion)
