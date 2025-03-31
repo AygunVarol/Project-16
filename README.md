@@ -118,6 +118,8 @@ query_analysis_project/
 
 # Results
 
+We have selected 15 example queries and these queries with their relevance and accuracy score with human expert and larger model (4o). In the bar plot their relevance score is presented. 
+
 ![Results](https://github.com/user-attachments/assets/c16415e2-fe69-4b5b-ab8f-3195e8ef1b5d)
 
 
