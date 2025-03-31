@@ -74,6 +74,16 @@ This project aims to optimize poorly structured user queries by analyzing and re
    cd query-optimizer-ui
    npm start
    ```
+   
+### Please recall in order to backend take user query, ports have to be updated in the App.js file.
+
+```
+  const endpoints = {
+    rewriter: "http://localhost:5000/rewriter",
+    expander: "http://localhost:5000/expander",
+    deepseek: "http://localhost:5000/deepseek"
+  };
+```
 
 ## Requirements
 
@@ -84,6 +94,8 @@ elasticsearch==7.17.0
 pandas
 openai
 ```
+
+##
 
 # Structure
 
