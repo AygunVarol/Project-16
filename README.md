@@ -120,8 +120,7 @@ query_analysis_project/
 
 We have selected 15 example queries and these queries with their relevance and accuracy score with human expert and larger model (4o). In the bar plot their relevance score is presented. 
 
-![Results](https://github.com/user-attachments/assets/c16415e2-fe69-4b5b-ab8f-3195e8ef1b5d)
-
+![Results2](https://github.com/user-attachments/assets/32aeb9d5-1d37-41a3-82dc-0710cb30c2da)
 
 # Fine-tuned Model 1 - [llama-query-expansion-finetuned](https://huggingface.co/Aygun/llama-query-expansion-finetuned) 
 
