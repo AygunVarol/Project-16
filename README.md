@@ -75,7 +75,7 @@ This project aims to optimize poorly structured user queries by analyzing and re
    npm start
    ```
    
-### Please recall in order to backend take user query, ports have to be updated in the App.js file.
+### Please recall in order to allow backend to take user's query, ports have to be updated in the App.js file.
 
 ```
   const endpoints = {
