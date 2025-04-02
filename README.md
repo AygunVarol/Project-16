@@ -75,6 +75,12 @@ This project aims to optimize poorly structured user queries by analyzing and re
    npm start
    ```
    
+6. Replace CSS and JavaScript files given in the query-optimizer-ui/src with your created react files. So that the UI will be created.
+   ```
+   App.js
+   App.css
+   ```
+   
 ### Please recall in order to allow backend to take user's query, ports have to be updated in the App.js file.
 
 ```
