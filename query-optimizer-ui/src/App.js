@@ -9,9 +9,9 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   const endpoints = {
-    rewriter: "http://localhost:8000/rewriter",
-    expander: "http://localhost:8000/expander",
-    deepseek: "http://localhost:8000/deepseek"
+    rewriter: "http://localhost:5000/rewriter",
+    expander: "http://localhost:5000/expander",
+    deepseek: "http://localhost:5000/deepseek"
   };
 
   const handleSubmit = useCallback(async (e) => {
